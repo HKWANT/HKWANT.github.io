@@ -64,6 +64,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-第一个程序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/22/第一个程序/" class="article-date">
+  <time datetime="2016-06-22T11:16:55.000Z" itemprop="datePublished">2016-06-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="hexo博客搭建"><a href="#hexo博客搭建" class="headerlink" title="hexo博客搭建"></a>hexo博客搭建</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><pre>
+- 安装nodeJS 
+- 安装hexo(npm install hexo -g)并测试是否安装成功（hexo）
+- 创建目录并进入（hexo init）(hexo server)
+</pre>
+### 2.
+<pre>
+- 注册github账号一个
+- 配置ssh-key(ssh-keygen)连续三次回车
+- vim ~/.ssh/id_rsa.pub(复制ssh-key)
+- github设置ssh粘贴
+</pre>
+<pre>
+- 配置github与本地机器验证（git config --global user.name ""
+- git config --global user.email ""）
+- 新建博客域名仓库（用户名.github.io）
+</pre>
+### 3.
+<pre>
+-config.yml
+- deploy字段
+- type:git
+- repo:域名仓库的https地址
+</pre>
+###4.
+<pre>
+- 发布
+- npm install hexo-deployer-git - -save
+- hexo g
+- hexo d
+</pre>
+
+
+<h3 id="done"><a href="#done" class="headerlink" title="done!!!"></a>done!!!</h3><h3 id="picture"><a href="#picture" class="headerlink" title="picture"></a>picture</h3><p><img src="http://pic60.nipic.com/file/20150303/12216461_110913232000_2.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/22/第一个程序/" data-id="cipqwj7wq0003zssmbab4l75h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-第一篇" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/22/第一篇/" class="article-date">
@@ -112,7 +172,7 @@ var Mou = exactlyTheAppIwant;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/第一篇/" data-id="cipqq6t9q0001wnsmcwpr5c4y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/第一篇/" data-id="cipqrpjv20001y3smdtoilgl4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -157,7 +217,7 @@ var Mou = exactlyTheAppIwant;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipqq6t9l0000wnsmky06pxdy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipqrpjux0000y3sm8y5z3mk8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -195,6 +255,10 @@ var Mou = exactlyTheAppIwant;
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/22/第一个程序/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2016/06/22/第一篇/">第一篇</a>
