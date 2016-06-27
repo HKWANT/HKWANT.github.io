@@ -64,6 +64,165 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-语义化标签" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/27/语义化标签/" class="article-date">
+  <time datetime="2016-06-27T09:18:45.000Z" itemprop="datePublished">2016-06-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="html5语义化标签"><a href="#html5语义化标签" class="headerlink" title="html5语义化标签"></a>html5语义化标签</h1><h2 id="短语句"><a href="#短语句" class="headerlink" title="短语句"></a>短语句</h2><h3 id="mark-标记"><a href="#mark-标记" class="headerlink" title="mark-标记"></a>mark-标记</h3><pre>
+ 属性
+- 高亮文本
+- 常作用于搜索高亮
+</pre>
+
+<h3 id="meter-定义度量衡"><a href="#meter-定义度量衡" class="headerlink" title="meter-定义度量衡"></a>meter-定义度量衡</h3><pre>
+ 属性
+- value-实际度量的值，默认为0，可以为整数或者浮点数
+- high-范围的上限值
+- low-范围的下限值
+- Max-最大值，默认值为1
+- min-最小值，默认值为0
+- optimum-最佳的值，必须在min属性值与Max属性值之间
+</pre>
+### progress-定义进度
+<pre>
+ 属性
+- value
+- max
+- min
+</pre>
+### time-定义时间和日期
+<pre>
+- datetime="YYYY-MM-DDThh:mm:ssTZD"
+</pre>
+
+
+<h3 id="ruby-注释"><a href="#ruby-注释" class="headerlink" title="ruby-注释"></a>ruby-注释</h3><pre>
+- rp
+- rt
+</pre>
+### wbr-定义换行
+### abbr-定义缩写
+### bdi-定义隔离
+### cite-引入
+### blockquote-引入
+### q-引入
+### output-输出
+### code-格式化代码
+
+
+## 新增标签 
+### details-定义元素的细节-summary定义细节标题-属性open=“open”
+<pre>
+- details元素用来描述文档或文档片段的信息，summary元素与details元素一同使用，用于说明文档的标题，同时，summary元素应为details元素的第一个子元素。
+</pre>
+### dialog-定义对话框-open属性
+### figure-图表-figcaption定义图表标题
+### menu
+### main
+### map-用于客户端图像映射。图像映射指带有可点击区域的一副图像
+<pre>
+- usemap
+- area标签
+</pre>
+### address-定义文档作者/所有者的联系信息
+<pre>
+- 如果<address>元素位于body元素内部，则它表示该文档作者/所有者的联系信息
+- 不应该使用<address>元素位于<article>元素内部，则它表示该文章作者/所有者的联系信息
+- 不应该使用<address>标签来描述邮政地址，除非这些信息是联系信息的组成部分
+- <address>元素通常被包含在footer元素的其他信息中
+</address></address></article></address></address></pre>
+
+
+<h2 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h2><h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><pre>
+- tel-用于输入电话号码
+- search-用于提示用户输入要搜索的文字（search和text的区别主要在于样式上）
+- url-用于输入单个网址
+- email-用于输入单个电子邮件地址（如果指定了multiple属性，就可以输入多个电子邮件地址，以逗号分隔）
+- datetime-用于输入时区设置为UTC的日期和时间
+- date-用于输入不含时区的日期
+- month-用于输入含年份和周数但不含时区的日期
+- week-用于输入含年份和周数但不含时区的日期
+- time-用于输入含小时·分钟·秒·和秒的小数部分但不含时区的数值
+- datetime-local-用于输入不含时区的日期和时间
+- number-用户输入数字
+- range-用于输入数字，但与number的区别在于无需输入具体数字-在大部分的支持该类型的浏览器中，范围控件的实施形式为滑块
+- color-用于通过颜色池控件选择颜色
+</pre>
+### label-表单（for）
+### datalist-配合input使用-list属性配合id名
+### keygen-表单密匙
+### ins-定义已经被插入文档中得文本（del）
+### samp-定义计算机程序的样本文本
+### fieldset-(legend)
+
+## 表单属性
+### autofocus
+<pre>
+- 用于在网页加载后对焦到相关元素上的输入
+- autofocus的目标可以是输入·选择·文本区域和按钮
+</pre>
+### placeholder
+<pre>
+- 用于提示用户应输入的数据类型
+- 在对焦到相关元素以及用户输入数据之前，系统会以浅色文字显示占位符值。你可以在输入和文本区域中指定该值
+</pre>
+### required
+### pattern
+### autocomplete
+### form
+
+
+
+## 音视频
+### audio-音频
+<pre>
+属性
+- autoplay-自动播放
+- controls-控制
+- loop-循环
+- preload-预存
+- src
+</pre>
+### source-title属性（单标签）
+### track-定义用在媒体播放器中得文本轨道（歌词文件，字幕文件）
+### video-视频
+<pre>
+属性
+- autoplay
+- controls
+- loop
+- preload
+- src
+- width
+- src-embed
+</pre>
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/27/语义化标签/" data-id="cipy04co3000161sml86seroe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-css" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/23/css/" class="article-date">
@@ -90,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/css/" data-id="cips4lkm90000yesm2uuuzt80" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/css/" data-id="cipy04co7000261smnkvbgrlj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/第一个程序/" data-id="ciprx2upm0000pvsmupevnlrt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/第一个程序/" data-id="cipy04coa000361sm9pkzcpl8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,7 +367,7 @@ var Mou = exactlyTheAppIwant;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/第一篇/" data-id="ciprlrdw30001cfsm3md0prfe" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/第一篇/" data-id="cipy04cob000461smzdean0w7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -253,7 +412,7 @@ var Mou = exactlyTheAppIwant;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciprlrdux0000cfsmzzwcjs1b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipy04cny000061smz51sdllv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -291,6 +450,10 @@ var Mou = exactlyTheAppIwant;
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/27/语义化标签/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2016/06/23/css/">(no title)</a>
